@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import pickle
 import matplotlib.pyplot as plt
-# import tensorflow as tf
+import tensorflow as tf
 # tf.keras.backend.set_image_data_format('channels_first')
 
 st.set_page_config(layout='wide')
