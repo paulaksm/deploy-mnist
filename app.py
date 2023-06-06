@@ -17,7 +17,7 @@ st.set_page_config(layout='wide')
 def load_cnn_model():
     return tf.keras.models.load_model('mnist_cnn.h5')
 
-model_rf = load_random_forest_model()
+# model_rf = load_random_forest_model()
 model_cnn = load_cnn_model()
 
 chosen_model = st.sidebar.selectbox(
