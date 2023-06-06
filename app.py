@@ -9,9 +9,9 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(layout='wide')
 
-@st.cache_resource
-def load_random_forest_model():
-    return pickle.load(open("random_forest.pickle", "rb"))
+# @st.cache_resource
+# def load_random_forest_model():
+#     return pickle.load(open("random_forest.pickle", "rb"))
 
 @st.cache_resource
 def load_cnn_model():
@@ -21,7 +21,8 @@ model_rf = load_random_forest_model()
 model_cnn = load_cnn_model()
 
 chosen_model = st.sidebar.selectbox(
-    "Model:", ("Random Forest", "Convolutional Network")
+#     "Model:", ("Random Forest", "Convolutional Network")
+    "Model:", ("Convolutional Network")
 )
 # Specify canvas parameters in application
 drawing_mode = st.sidebar.selectbox(
