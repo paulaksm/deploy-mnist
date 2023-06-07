@@ -20,9 +20,12 @@ def load_cnn_model():
 # model_rf = load_random_forest_model()
 model_cnn = load_cnn_model()
 
-chosen_model = st.sidebar.selectbox(
-#     "Model:", ("Random Forest", "Convolutional Network")
-    "Model:", ("Convolutional Network")
+# chosen_model = st.sidebar.selectbox(
+# #     "Model:", ("Random Forest", "Convolutional Network")
+# )
+chosen_model = st.sidebar.radio(
+    "Model:",
+    options=["Convolutional Network"],
 )
 # Specify canvas parameters in application
 drawing_mode = st.sidebar.selectbox(
